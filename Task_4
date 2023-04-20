@@ -1,0 +1,6 @@
+S = int(input("Enter the total number of cranes: "))
+if not S % 6:
+    x = S // 6
+    print(f'Katya did {x * 4} ')
+    print(f'Seryozha did {x} ')
+    print(f'Petya did {x}')

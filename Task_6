@@ -1,0 +1,13 @@
+s = input('Enter the six-digit ticket number: ')
+if len(s) != 6:
+   print(f'The number {s} is not six-digit')
+else:
+   res1 = 0
+   res2 = 0
+   for i in range(len(s)//2):
+       res1 += int(s[i])
+       res2 += int(s[len(s)//2 + i])
+   if res1 == res2:
+       print(f'{s} lucky number, congratulations!')
+   else:
+       print(f'{s} unfortunately, not a lucky number')
